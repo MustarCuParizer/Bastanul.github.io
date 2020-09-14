@@ -1,0 +1,20 @@
+                 Random.org
+
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <p>De fiecare data cand apesi pe buton primesti un numar intre 0 si 999999.</p>
+  
+  <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,999999)">Apasa-ma!</button>
+  
+  <p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+</body>
+</html>
